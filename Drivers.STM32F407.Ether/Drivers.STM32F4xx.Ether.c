@@ -41,7 +41,7 @@ const __Sys_Device_OPS_Type __Device_OPS_Ether=
 	.Info="MCU:STM32F4xx Module:Ether Version:0.0.1 "__DATE__" "__TIME__,
 };
 
-int Drivers_STM32F4xx_Ether_Init(void)
+int Drivers_STM32F4xx_Ether_Setup(void)
 {
 
 	__Sys_Device_Register_Drivers(&__Device_OPS_Ether);
@@ -299,5 +299,5 @@ void Drivers_STM32F4xx_Ether_IRQ(void *Args,int IRQ_Index)
 	}
 }
 
-__Sys_Device_Module_Init_Export(Drivers_STM32F4xx_Ether_Init);
+__Sys_Device_Module_Init_Export(Drivers_STM32F4xx_Ether_Setup);
 

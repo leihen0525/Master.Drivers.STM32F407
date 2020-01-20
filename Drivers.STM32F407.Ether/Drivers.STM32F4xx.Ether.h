@@ -8,7 +8,7 @@
 #ifndef DRIVERS_STM32F4XX_ETHER_H_
 #define DRIVERS_STM32F4XX_ETHER_H_
 
-int Drivers_STM32F4xx_Ether_Init(void);
+int Drivers_STM32F4xx_Ether_Setup(void);
 int Drivers_STM32F4xx_Ether_Open(void *Device_Args,int Mode);
 int Drivers_STM32F4xx_Ether_Read(void *Device_Args,long OffSet_Pos, void *Buffer, unsigned long Size,int TimeOut);
 int Drivers_STM32F4xx_Ether_Write(void *Device_Args,long OffSet_Pos, const void *Buffer, unsigned long Size,int TimeOut);
